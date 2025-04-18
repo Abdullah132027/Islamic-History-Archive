@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Canterbury';
+    src: url('fonts/canterbury/Canterbury.ttf');
+}
+
+@font-face {
+    font-family: 'PirataOne';
+    src: url('fonts/Pirata_One/PirataOne-Regular.ttf');
+}

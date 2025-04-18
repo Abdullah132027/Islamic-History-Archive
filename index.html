@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic History Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex min-h-screen bg-stone-50">
+        <div class="w-64 border-r border-amber-200 hidden flex-col h-screen sticky top-0 left-0 lg:flex">
+            <div class="p-2 border-b border-amber-200">
+                <div class="p-4 ml-2">
+                    <h2 class="text-xl text-amber-900 font-semibold">Islamic History</h2>
+                    <p class="text-sm text-amber-700">Exploring the Golden Age</p>
+                </div>
+            </div>
+
+            <div class="flex-1 overflow-auto flex flex-col gap-2">
+                <div class="relative p-2">
+                    <p class="h-8 px-2 text-xs font-semibold text-amber-800">Navigation</p>
+                    <div class="text-sm">
+                        <!-- <ul class="w-full flex flex-col gap-1">
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-calendar text-amber-700">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>Timeline
+                                </button>
+                            </li>
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-book-open text-amber-700">
+                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                    </svg>Articles
+                                </button>
+                            </li>
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-image text-amber-700">
+                                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                                        <circle cx="9" cy="9" r="2"></circle>
+                                        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                                    </svg>Gallery
+                                </button>
+                            </li>
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-message-square text-amber-700">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>Forum
+                                </button>
+                            </li>
+                        </ul> -->
+
+                        <ul class="w-full flex flex-col gap-1">
+                            <li class="relative">
+                                <a href="#timeline"
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-calendar text-amber-700">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg>Timeline
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a href="#articles"
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-book-open text-amber-700">
+                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                    </svg>Articles
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a href="#gallery"
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-image text-amber-700">
+                                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                                        <circle cx="9" cy="9" r="2"></circle>
+                                        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                                    </svg>Gallery
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a href="#forum"
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-message-square text-amber-700">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>Forum
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="relative p-2">
+                    <p class="h-8 px-2 text-xs font-semibold text-amber-800">Key Topics</p>
+                    <div class="text-sm">
+                        <ul class="w-full flex flex-col gap-1">
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    Scientific Achievements
+                                </button>
+                            </li>
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    Art & Architecture
+                                </button>
+                            </li>
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    Philosophy & Literature
+                                </button>
+                            </li>
+                            <li class="relative">
+                                <button
+                                    class="flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none [&>svg]:size-4 [&>svg]:shrink-0 h-8 text-sm text-amber-900 hover:bg-amber-50">
+                                    Trade & Commerce
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 border-t border-amber-200">
+                <p class="text-xs text-amber-700 text-center">© 2025 Islamic History Archive</p>
+            </div>
+        </div>
+
+
+
+        <main class="flex-1 overflow-y-auto">
+            <header class="bg-blue-900 text-white">
+                <div class="container flex items-center justify-between mx-auto px-4 py-3">
+                    <h1 class="text-lg lg:text-3xl font-PirataOne font-bold">Islamic History Archive</h1>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <input type="search"
+                                class="flex h-8 lg:h-10 w-full border border-blue-700 bg-blue-800 rounded-md px-2 py-1 pl-8 pr-5 lg:px-4 lg:py-2 lg:pl-8 lg:pr-7
+                                text-xs lg:text-sm placeholder:text-blue-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-white"
+                                placeholder="Search the archives...">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-search absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-blue-300">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
+                        </div>
+                        <button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs lg:text-sm font-medium border border-amber-400 lg:px-4 lg:py-2 px-2 py-1 text-amber-400 hover:bg-blue-800 active:bg-blue-700">Sign
+                            In</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="relative h-[500px] bg-cover"
+                style="background-image: url('img/free-photo-of-historic-mosque-courtyard-with-ottoman-architecture.jpeg');">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent flex items-center">
+                    <div class="container m-auto px-4 text-white">
+                        <div class="max-w-2xl">
+                            <h1 class="text-2xl lg:text-5xl font-bold font-PirataOne mb-4">Discover the Golden Age of
+                                Islamic
+                                Civilization</h1>
+                            <p class="text-sm lg:text-xl mb-6 font-serif">Explore the rich history, scientific
+                                achievements, and
+                                cultural heritage that shaped our modern world.</p>
+                            <button
+                                class="bg-amber-600 h-8 px-2 py-1 lg:h-10 lg:px-4 lg:py-2 rounded-md text-xs lg:text-sm hover:bg-amber-700">Begin
+                                Your
+                                Journey</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-slate-100" id="timeline">
+                <div class="container px-4 mx-auto">
+                    <h2 class="text-xl lg:text-3xl font-sans font-bold text-blue-900 text-center mb-8">Interactive
+                        Timeline</h2>
+                    <div class="relative">
+                        <div class="h-1 lg:h-2 bg-amber-200 absolute top-4 left-0 right-0 z-0"></div>
+                        <div class="flex justify-between items-center relative z-10 mb-8">
+                            <div class="flex flex-col items-center cursor-pointer" onclick="chaneTimeline(1,this)">
+                                <div
+                                    class="h-8 w-8 lg:h-10 lg:w-10 flex justify-center items-center bg-blue-100 text-blue-900 rounded-full">
+                                    1</div>
+                                <div class="text-xs lg:text-sm font-semibold mt-2 text-blue-900">632-661</div>
+                            </div>
+                            <div class="flex flex-col items-center cursor-pointer" onclick="chaneTimeline(2,this)">
+                                <div
+                                    class="h-8 w-8 lg:h-10 lg:w-10 flex justify-center items-center bg-amber-600 text-white rounded-full">
+                                    2</div>
+                                <div class="text-xs lg:text-sm font-semibold mt-2 text-blue-900">661-750</div>
+                            </div>
+                            <div class="flex flex-col items-center cursor-pointer" onclick="chaneTimeline(3,this)">
+                                <div
+                                    class="h-8 w-8 lg:h-10 lg:w-10 flex justify-center items-center bg-blue-100 text-blue-900 rounded-full">
+                                    3</div>
+                                <div class="text-xs lg:text-sm font-semibold mt-2 text-blue-900">750-1258</div>
+                            </div>
+                            <div class="flex flex-col items-center cursor-pointer" onclick="chaneTimeline(4,this)">
+                                <div
+                                    class="h-8 w-8 lg:h-10 lg:w-10 flex justify-center items-center bg-blue-100 text-blue-900 rounded-full">
+                                    4</div>
+                                <div class="text-xs lg:text-sm font-semibold mt-2 text-blue-900">1299-1922</div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-white border border-amber-200 shadow-md rounded-lg"
+                            id="display-caliphate-info">
+                            <h3 class="text-xl lg:text-3xl font-PirataOne font-bold text-blue-900 mb-2">Umayyad
+                                Caliphate</h3>
+                            <p class="text-blue-800 mb-4 text-sm lg:text-base">661-750</p>
+                            <p class="text-gray-700 text-sm lg:text-base">Expansion across North Africa and into Spain
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16" id="articles">
+                <div class="container px-4 mx-auto">
+                    <h2 class="text-xl lg:text-3xl font-sans font-bold text-blue-900 text-center mb-8">Featured Articles
+                    </h2>
+
+                    <div class=" grid gap-8 md:grid-cols-3">
+                        <div
+                            class="bg-white rounded-lg border border-amber-100 shadow-md hover:shadow-xl overflow-hidden transition-shadow duration-300">
+                            <img src="img/house-of-wisdom.jpg" alt="" class="w-full h-36 lg:h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-xs lg:text-sm text-amber-600 font-medium mb-2">Science & Learning</div>
+                                <h3 class="text-sm lg:text-xl text-blue-900 font-sans font-bold mb-2">The House of
+                                    Wisdom:
+                                    Baghdad's Intellectual Center</h3>
+                                <p class="text-xs text-gray-600 mb-4">Explore the legendary library and translation
+                                    institute
+                                    that preserved and expanded human knowledge.</p>
+                                <div class="flex justify-between items-center text-xs lg:text-sm text-gray-500">
+                                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-user h-3 w-3 lg:h-4 lg:w-4 mr-1">
+                                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>Dr. Ahmed Hassan</div>
+                                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-clock h-3 w-3 lg:h-4 lg:w-4 mr-1">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>March 15, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-lg border border-amber-100 shadow-md hover:shadow-xl overflow-hidden transition-shadow duration-300">
+                            <img src="img/Tusi_couple.jpg" alt="" class="w-full h-36 lg:h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-xs lg:text-sm text-amber-600 font-medium mb-2">Scientific Achievements
+                                </div>
+                                <h3 class="text-sm lg:text-xl text-blue-900 font-sans font-bold mb-2">Islamic
+                                    Contributions to
+                                    Mathematics and Astronomy</h3>
+                                <p class="text-xs text-gray-600 mb-4">How Muslim scholars revolutionized mathematics,
+                                    developed
+                                    algebra, and mapped the stars.</p>
+                                <div class="flex justify-between items-center text-xs lg:text-sm text-gray-500">
+                                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-user h-3 w-3 lg:h-4 lg:w-4 mr-1">
+                                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>Prof. Sarah Khan</div>
+                                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-clock h-3 w-3 lg:h-4 lg:w-4 mr-1">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>March 10, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-lg border border-amber-100 shadow-md hover:shadow-xl overflow-hidden transition-shadow duration-300">
+                            <img src="img/Islamic-Calligraphy-Explained-Beyond-Words-and-Letters.jpg" alt=""
+                                class="w-full h-36 lg:h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-xs lg:text-sm text-amber-600 font-medium mb-2">Art & Culture</div>
+                                <h3 class="text-sm lg:text-xl text-blue-900 font-sans font-bold mb-2">The Art of Islamic
+                                    Calligraphy Through the Ages</h3>
+                                <p class="text-xs text-gray-600 mb-4">The evolution and significance of calligraphy as
+                                    an art
+                                    form in Islamic civilization.</p>
+                                <div class="flex justify-between items-center text-xs lg:text-sm text-gray-500">
+                                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-user h-3 w-3 lg:h-4 lg:w-4 mr-1">
+                                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>Mustafa Ali</div>
+                                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-clock h-3 w-3 lg:h-4 lg:w-4 mr-1">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>March 5, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <button
+                            class="bg-blue-50 h-8 px-2 py-1 lg:h-10 lg:px-4 lg:py-2 rounded-md text-xs lg:ext-sm hover:bg-blue-100 border border-blue-900 text-blue-900">
+                            View All Articles</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16 bg-blue-900 text-white" id="gallery">
+                <div class="container px-4 mx-auto">
+                    <h2 class="text-xl lg:text-3xl font-sans font-bold text-center mb-8">Image Gallery</h2>
+
+                    <div class="relative">
+                        <div class="overflow-hidden rounded-lg shadow-xl">
+                            <img src="img/main-image.jpg" alt="" class="w-full h-[200px] lg:h-[400px] object-cover"
+                                id="carousel-image">
+                        </div>
+
+                        <button
+                            class="h-7 w-7 lg:h-10 lg:w-10 bg-white/20 rounded-full flex justify-center items-center text-sm font-medium absolute left-4 top-1/2 hover:text-black hover:bg-white/40 transition-colors"
+                            id="prev-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-left h-6 w-6">
+                                <path d="m15 18-6-6 6-6"></path>
+                            </svg>
+                        </button>
+                        <button
+                            class="h-7 w-7 lg:h-10 lg:w-10 bg-white/20 rounded-full flex justify-center items-center text-sm font-medium absolute right-4 top-1/2 hover:text-black hover:bg-white/40 transition-colors"
+                            id="next-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-right h-6 w-6">
+                                <path d="m9 18 6-6-6-6"></path>
+                            </svg>
+                        </button>
+
+                        <div class="flex justify-center mt-4 space-x-2">
+                            <button class="h-2 w-2 lg:h-3 lg:w-3 bg-amber-500 rounded-full indicator"
+                                data-index="1"></button>
+                            <button class="h-2 w-2 lg:h-3 lg:w-3 bg-white/50 rounded-full indicator"
+                                data-index="2"></button>
+                            <button class="h-2 w-2 lg:h-3 lg:w-3 bg-white/50 rounded-full indicator"
+                                data-index="3"></button>
+                            <button class="h-2 w-2 lg:h-3 lg:w-3 bg-white/50 rounded-full indicator"
+                                data-index="4"></button>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <button
+                            class="bg-amber-600 h-8 px-2 py-1  lg:h-10 lg:x-4 lg:py-2 rounded-md text-xs lg:text-sm hover:bg-amber-700 transition-colors">Explore
+                            Full
+                            Gallery</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-16" id="forum">
+                <div class="container px-4 mx-auto">
+                    <h2 class="text-xl lg:text-3xl font-sans font-bold text-blue-900 text-center mb-8">Join the
+                        Discussion</h2>
+                    <div class="bg-white p-6 border border-amber-200 rounded-lg shadow-md">
+                        <div class="border-b border-amber-100 pb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-lg lg:text-xl font-bold text-blue-900">Recent Topics</h3>
+                                <button
+                                    class="text-amber-600 h-10 px-4 py-2 rounded-md text-xs lg:text-sm hover:bg-slate-100 hover:text-amber-700 transition-colors">View
+                                    All</button>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center p-3 hover:bg-stone-50 rounded-md cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-message-square h-4 w-4 lg:h-5 lg:w-5 text-amber-600 mr-3">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+
+                                    <div>
+                                        <p class="text-blue-900 font-semibold text-sm lg:text-base">The influence of Ibn
+                                            Sina on modern
+                                            medicine</p>
+                                        <p class="text-xs lg:text-sm text text-gray-500">Started by User123 • 5 replies
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 hover:bg-stone-50 rounded-md cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-message-square h-4 w-4 lg:h-5 lg:w-5 text-amber-600 mr-3">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+
+                                    <div>
+                                        <p class="text-blue-900 font-semibold text-sm lg:text-base">The influence of Ibn
+                                            Sina on modern
+                                            medicine</p>
+                                        <p class="text-xs lg:text-sm text text-gray-500">Started by User123 • 5 replies
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 hover:bg-stone-50 rounded-md cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-message-square h-4 w-4 lg:h-5 lg:w-5 text-amber-600 mr-3">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+
+                                    <div>
+                                        <p class="text-blue-900 font-semibold text-sm lg:text-base">The influence of Ibn
+                                            Sina on modern
+                                            medicine</p>
+                                        <p class="text-xs lg:text-sm text text-gray-500">Started by User123 • 5 replies
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center p-3 hover:bg-stone-50 rounded-md cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-message-square h-4 w-4 lg:h-5 lg:w-5 text-amber-600 mr-3">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+
+                                    <div>
+                                        <p class="text-blue-900 font-semibold text-sm lg:text-base">The influence of Ibn
+                                            Sina on modern
+                                            medicine</p>
+                                        <p class="text-xs lg:text-sm text text-gray-500">Started by User123 • 5 replies
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button
+                                class="bg-blue-900 text-white h-8 px-2 scroll-py-14 lg:h-10 lg:px-4 lg:py-2 rounded-md text-xs lg:text-sm hover:bg-blue-800 transition-colors">Start
+                                a New Discussion</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bg-blue-950 text-white py-12">
+                <div class="container px-4 mx-auto">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div>
+                            <h3 class="text-lg lg:text-xl font-sans font-bold mb-4">Islamic History Archive</h3>
+                            <p class="text-blue-200 text-sm lg:text-base">Dedicated to preserving and sharing the rich
+                                history and
+                                contributions of Islamic civilization.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-base lg:text-lg font-medium mb-4">Quick Links</h4>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Home</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Timeline</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Articles</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Gallery</a></li>
+                                <li><a href="#"
+                                        class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Forum</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-base lg:text-lg font-medium mb-4">Resources</h4>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Research
+                                        Papers</a></li>
+                                <li><a href="#" class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Primary
+                                        Sources</a></li>
+                                <li><a href="#"
+                                        class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Educational
+                                        Materials</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-blue-200 hover:text-amber-400 text-sm lg:text-base">Bibliography</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-base lg:text-lg font-medium mb-4">Stay Connected</h4>
+                            <p class="text-blue-200 mb-4 text-sm lg:text-base">Subscribe to our newsletter for updates
+                                on new content and
+                                events.
+                            </p>
+                            <div class="flex">
+                                <input type="search"
+                                    class="flex h-10 w-full border border-blue-700 bg-blue-900 rounded-md px-3 pr-7 py-1 text-sm placeholder:text-blue-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-white"
+                                    placeholder="Your email">
+                                <button
+                                    class="bg-amber-600 h-10 px-4 py-2 rounded-md text-sm hover:bg-amber-700">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center text-xs lg:text-sm text-blue-300 border-t border-blue-800 pt-8 mt-8">
+                        <p>© 2025 Islamic History Archive. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Sidebar -->
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
